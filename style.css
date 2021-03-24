@@ -1,0 +1,189 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #28282B;
+    color: #f8f8ff;
+    outline: none;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+}
+
+.navbar{
+   background:#28282B; 
+   color: #f8f8ff;
+   font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler-icon{
+    color: #f8f8ff;
+    
+}
+
+.navbar-nav{
+ text-align: center
+}
+
+section{
+    text-align: center;
+    
+}
+
+section h1{
+margin-bottom: 1rem;
+font-family: 'Roboto Mono', monospace;
+text-decoration: underline;
+}
+
+#logoSec{
+    color: #f8f8ff;
+}
+
+#logoSec img{
+width: 65%;
+margin-bottom: 3rem;
+}
+
+#episodeContainer{
+    margin: 0 auto;
+    width: 85%;
+    border-top: 1px solid #f8f8ff;
+    border-bottom: 1px solid #f8f8ff;
+    max-height: 40vh;
+    overflow: scroll;
+    margin-bottom: 3rem;
+    font-size: 0.15rem;
+    font-weight: lighter;
+    font-family: 'Roboto Mono', monospace;
+
+   
+}
+
+.episode{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 0.5px solid #f8f8ff;
+    margin: 0 auto;
+}
+
+
+.episodeDate{
+    text-align: left;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+}
+
+.episode h4{
+ margin-top: -1rem;
+ font-size: 1.25rem;
+}
+
+
+.episodeLinkIcon{
+    font-size: 1.25rem;
+    margin-right: 10px;
+}
+
+.fa-google-play{
+    font-size: 1rem;
+}
+
+
+.socialContainer{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.socialContainer h4 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+#aboutSec p{
+ width: 75%;
+ margin: 0 auto;
+ font-size: 0.75rem;
+ font-family: 'Roboto Mono', monospace;
+}
+
+hr{
+    width: 75%;
+    margin: 3rem auto;
+}
+
+@media screen and (min-width: 768px) {
+     #logoSec img{
+        width: 50%;
+        margin-bottom: 5rem;
+        }
+
+        .socialContainer{
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        #aboutSec p{
+            font-size: 0.85rem;
+           }
+        
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    #hr2{
+        display: none;
+    }
+    
+    #logoSec img{
+        width: 35%;
+        margin-bottom: 5rem;
+        }
+
+        section h1{
+            font-size: 2rem;
+            }
+    
+    #socials{
+        width: 75%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .socialContainer{
+        width: 35%;
+    }
+
+    #episodeContainer{
+        width: 65%;
+        max-height: 25vh;
+    }
+    
+  }
+
+  @media screen and (min-width: 1300px){
+    #logoSec img{
+        width: 25%;
+        }
+
+        .socialContainer{
+            width: 40%;
+        }
+
+        #aboutSec p{
+            font-size: 1rem;
+           }
+
+           #episodeContainer{
+            width: 65%;
+            max-height: 35vh;
+        }
+  }
