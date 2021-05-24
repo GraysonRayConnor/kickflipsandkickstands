@@ -38,6 +38,7 @@ section h1{
 margin-bottom: 1rem;
 font-family: 'Roboto Mono', monospace;
 text-decoration: underline;
+font-size: 7vw;
 }
 
 #logoSec{
@@ -50,27 +51,20 @@ margin-bottom: 3rem;
 }
 
 #episodeContainer{
+    width: 75%;
     margin: 0 auto;
-    width: 85%;
+    overflow: scroll;
+    height: 50vh;
+    /*
     border-top: 1px solid #f8f8ff;
     border-bottom: 1px solid #f8f8ff;
     max-height: 40vh;
-    overflow: scroll;
     margin-bottom: 3rem;
     font-size: 0.15rem;
     font-weight: lighter;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;*/
 
    
-}
-
-.episode{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
-    border-bottom: 0.5px solid #f8f8ff;
-    margin: 0 auto;
 }
 
 
@@ -82,17 +76,30 @@ margin-bottom: 3rem;
 
 .episode h4{
  margin-top: -1rem;
- font-size: 1.25rem;
+ font-size: 0.75rem;
+}
+
+.episodeLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
 }
 
 
 .episodeLinkIcon{
-    font-size: 1.25rem;
-    margin-right: 10px;
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
 }
 
 .fa-google-play{
-    font-size: 1rem;
+    font-size: 0.75rem;
+    padding-top: 3.5px;
+}
+
+.fa-youtube {
+    padding-top: 1px;
 }
 
 
@@ -115,9 +122,53 @@ margin-bottom: 3rem;
 }
 
 hr{
-    width: 75%;
+    width: 80%;
     margin: 3rem auto;
 }
+
+
+#kkBoard {
+    width: 65%;
+}
+
+#footerLinks{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 40%;
+}
+
+#legal{
+    width: 100%;
+    font-size: 3vw;
+    font-style: italic;
+}
+
+#scrollToTop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+    border-bottom: 25px solid #555;
+    text-align: center;
+}
+
+#scrollToTop a {
+    position: fixed;
+    bottom: 13.75px;
+    right: 19.55px;
+    font-size: 5px;
+    color: #f8f8ff;
+    text-decoration: none;
+    z-index: 1;
+}
+
+
 
 @media screen and (min-width: 768px) {
      #logoSec img{
@@ -133,10 +184,48 @@ hr{
         #aboutSec p{
             font-size: 0.85rem;
            }
+
+           section h1{
+            font-size: 4vw;
+            }
+
+            #kkBoard {
+                width: 50%;
+                margin: 3rem auto;
+            }
+
+            #footerLinks {
+                width: 25%;
+                margin-bottom: 1.5rem;
+            }
+
+            #legal {
+                font-size: 2vw;
+            }
+
+            #scrollToTop{
+                bottom: 15px;
+                right: 15px;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                border-bottom: 35px solid #555;
+            }
+            
+            #scrollToTop a {
+                bottom: 20px;
+                right: 31px;
+                font-size: 9px;
+            }
+            
+            
         
   }
 
   @media screen and (min-width: 1024px) {
+
+    hr {
+        margin: 5rem auto;
+    }
 
     #hr2{
         display: none;
@@ -166,6 +255,14 @@ hr{
         width: 65%;
         max-height: 25vh;
     }
+
+    #kkBoard {
+        width: 40%;
+    }
+
+    #footerLinks {
+        font-size: 2vw;
+    }
     
   }
 
@@ -185,5 +282,19 @@ hr{
            #episodeContainer{
             width: 65%;
             max-height: 35vh;
+        }
+
+        #legal{
+            font-size: 1vw;
+        }
+
+        #kkBoard{
+            width: 30%;
+            margin-top: 6rem;
+        }
+
+        #footerLinks {
+            font-size: 1vw;
+            width: 20%;
         }
   }
